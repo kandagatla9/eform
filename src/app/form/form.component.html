@@ -1,0 +1,39 @@
+<div class="container">
+
+    <form class="formbox" [formGroup]="requiredForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <div class="w3-card" style="padding: 10px; background-color: rgb(226, 226, 226);">
+                <div class="w3-row">
+                    <div class="w3-col m3">
+                        <label for="">Employee Name</label><br>
+                        <input class="mx-sm-3" type="text" placeholder="employee name" formControlName="ename" required>
+                    </div>
+                    <div class="w3-col m3">
+                        <label for="">Salary</label><br>
+                        <input class="mx-sm-3 mb-2" type="text" placeholder="salary" formControlName="salary" required>
+                    </div>
+                    <div class="w3-col m2">
+                        <label for="">Date of birth</label><br>
+                        <input class=" mx-sm-3 mb-2" type="date" placeholder="DOB" formControlName="dob" required>
+                    </div>
+                    <div class="w3-col m3" style="padding-left:30px">
+                        <label for="">Email</label><br>
+                        <input class="mx-sm-3" type="text" placeholder="email" formControlName="email" required>
+                    </div>
+                    <div class="w3-col m1">
+
+                        <button class="btn btn-primary" type="submit" style="margin-top: 20px;">Add</button>
+                    </div>
+                </div>
+                
+               
+                
+               
+            </div>
+
+
+
+        </div>
+
+    </form>
+</div>

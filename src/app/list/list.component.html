@@ -1,0 +1,46 @@
+<div class="container" style="padding: 0px;">
+    <div class="card">
+      <div class="card-body" >
+          <div class="row">
+            <div class="col-md-10">
+                <div class="w3-row">
+                    <div class="w3-col m4">
+                        {{item.id}}.
+                        {{item.ename}}
+                    </div>
+                    <div class="w3-col m3">
+                        {{item.salary}}
+                    </div>
+                    <div class="w3-col m3" style="padding-left: 30px;">
+                        {{item.dob}}
+                    </div>
+                    <div class="w3-col m2" style="padding-left: 10px;">
+                        {{item.email}}
+                        <button class="btn btn-danger" type="button" (click)="deletedItem(item)" >Delete</button>
+                    </div>
+                </div>
+                <h4></h4>
+                <h4></h4>
+                
+            </div>
+            
+           
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <div class="conatainer" style="padding: 0px;">
+    <div class="w3-table">
+        
+            <tr>
+                <td class="w3-border">{{item.ename}}</td>
+                <td class="w3-border">{{item.salary}}</td>
+                <td class="w3-border">{{item.dob}}</td>
+                <td class="w3-border">{{item.email}}</td>
+            </tr>
+       
+    </div>
+  </div>-->
+  
